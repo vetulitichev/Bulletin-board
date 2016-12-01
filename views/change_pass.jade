@@ -1,0 +1,16 @@
+!!! 5
+html(lang='en')
+    head
+        title Password changing
+    body
+        form(method='post')
+            p
+                label(for='email') E-mail
+                input(type='text', name='email')
+            p
+                label(for='old_pass') Old password
+                input(type='text', name='old_pass')
+            p
+                label(for='new_pass') New password
+                input(type='password', name='new_pass')
+            input(type='submit')

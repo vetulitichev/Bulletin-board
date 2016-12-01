@@ -1,0 +1,15 @@
+!!! 5
+html(lang='en')
+	head
+		title Login
+	body
+		form(method='post')
+			p
+				label(for='email') Email
+				input(type='text', name='email')
+			p
+				label(for='password') Password
+				input(type='password', name='password')
+			input(type='submit')
+		- each message in flash
+			h4(style="color: red;") #{message}
